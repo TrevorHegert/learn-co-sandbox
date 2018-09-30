@@ -1,22 +1,29 @@
 students = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
-
 def badge_maker(name)
     puts "Hello! My name is #{name}"
-  end
 end
 
-def badge_creator(students)
+def batch_badge_creator(students)
   badges = []
   students.each do |name|
     badges.push("Hello! My name is #{name}")
   end
-  return badges
+  print badges
 end
 
 def assign_rooms(students)
   room = 1
-  students.each do |room_num|
-    room
+  room_assignment = []
+  students.each do |name|
+    room_assignment.push("Hello #{name}! You'll be assigned to room #{room}")
+    room += 1
+  end
+  print room_assignment
+end
 
-badge_creator(students)
+
+
+
+
+

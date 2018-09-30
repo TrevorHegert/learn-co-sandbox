@@ -1,0 +1,5 @@
+require_relative './conferencebadges.rb'
+
+students = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+
+badge_maker(students)
