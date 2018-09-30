@@ -9,7 +9,7 @@ def batch_badge_creator(students)
   students.each do |name|
     badges.push("Hello! My name is #{name}")
   end
-  print badges
+  return badges
 end
 
 def assign_rooms(students)
@@ -19,7 +19,7 @@ def assign_rooms(students)
     room_assignment.push("Hello #{name}! You'll be assigned to room #{room}")
     room += 1
   end
-  print room_assignment
+  return room_assignment
 end
 
 
